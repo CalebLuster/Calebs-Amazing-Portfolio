@@ -1,22 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 header {
   background: #a80077;
   background: -webkit-linear-gradient(to right, #66ff00, #a80077);
   background: linear-gradient(to right, #66ff00, #a80077);
   padding: 20px 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-header ul li {
-  margin: 0 30px;
-  float: right;
-}
-.banner {
-  padding: 30px 40px;
-}
+
 .headers {
   color: #a80077;
   font: 30px bolder;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 30px 30px 30px 0;
-  
+  width: 20rem;
 }
 .first-image img {
   width: 803px;
@@ -24,5 +25,38 @@ header ul li {
 }
 .other-images img {
   width: 400px;
-  height: 150px;
+}
+#about-me {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 10px;
+  max-width: 1100px;
+}
+#work {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 3rem;
+  width: 100%;
+  padding: 0 10px;
+  max-width: 1100px;
+}
+#contact-me {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 10px;
+  max-width: 1100px;
+  margin-top: 3rem;
+}
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

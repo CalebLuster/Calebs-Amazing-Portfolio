@@ -3,8 +3,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --primary-color: #270979;
+  --secondary-color: #db00ff;
+  --tertiary-color: #002402;
+}
+body {
+  background: rgb(0, 36, 2);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 36, 2, 1) 0%,
+    rgba(39, 9, 121, 1) 40%,
+    rgba(219, 0, 255, 0.4929681345194328) 98%
+  );
+}
 header {
-  background: #4a48b7;
+  background: var(--primary-color);
   padding: 20px 35px;
   display: flex;
   justify-content: space-between;
@@ -14,7 +28,7 @@ header {
   font-size: 34px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
-  color: #33cc67;
+  color: var(--secondary-color);
 }
 .header-div {
   display: flex;
@@ -22,12 +36,32 @@ header {
   align-items: center;
 }
 .header-img {
-  width: 100px;
+  width: 300px;
   border-radius: 50px;
   padding-right: 5px;
 }
+.banner {
+  background: rgb(0, 36, 2);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 36, 2, 1) 0%,
+    rgba(39, 9, 121, 1) 40%,
+    rgba(219, 0, 255, 0.4929681345194328) 98%
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-title {
+  color: var(--primary-color);
+  font-size: 40px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bolder;
+  padding-right: 4rem;
+}
 .headers {
-  color: #33cc67;
+  color: var(--secondary-color);
   font: 30px bolder;
   font-family: Arial, Helvetica, sans-serif;
   width: 30rem;
@@ -35,12 +69,23 @@ header {
 }
 .first-image img {
   width: 807px;
-  /* height: 300px; */
+  border-radius: 10px;
 }
 .other-images img {
   width: 400px;
   height: 200px;
   margin: 5px 5px 5px 0;
+  border-radius: 10px;
+}
+
+.info-section {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0px 0px 0px 35px;
+  margin: 0 0 0 5.9rem;
+  border-left: var(--secondary-color) solid 2px;
+  font-size: 20px;
+  color: turquoise;
+  font-weight: bolder;
 }
 #about-me {
   margin: 0 auto;
@@ -52,13 +97,6 @@ header {
   padding-bottom: 10px;
   max-width: 1200px;
 }
-.info-section {
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 0px 0px 0px 35px;
-  margin: 0 0 0 36px;
-  border-left: #33cc67 solid 2px;
-}
-
 #work {
   margin: 0 auto;
   display: flex;
@@ -75,9 +113,9 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 30px 35px;
+  padding: 20px 35px;
   margin-top: 3rem;
-  background: #4a48b7;
+  background: var(--primary-color);
 }
 .footer-list {
   display: flex;
@@ -89,11 +127,30 @@ header {
 }
 .anchor {
   margin: 0 30px;
-  color: #33cc67;
+  color: var(--secondary-color);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bolder;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 3px;
 }
-
+.anchor:hover {
+  background-color: turquoise;
+  opacity: 80%;
+}
+.anchor:focus {
+  background-color: turquoise;
+  opacity: 50%;
+}
+.first-image:hover, .smaller-img:hover {
+  opacity: 50%;
+}
+.first-image:focus, .smaller-img:focus {
+  opacity: 25%;
+}
 .border {
-  border-left: #33cc67 solid 2px;
+  border-left: var(--secondary-color) solid 2px;
   padding-left: 2.5rem;
 }
 

@@ -8,103 +8,111 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div class="header-div">
+    <header class="header-wrapper">
+      <div class="header-content">
         <h1 class="name">Caleb Luster</h1>
+        <ul class="footer-list">
+          <li>
+            <a class="anchor" href="#about-me">About Me</a>
+          </li>
+          <li>
+            <a class="anchor" href="#work">Work</a>
+          </li>
+          <li>
+            <a class="anchor" href="#contact-me">Contact Me</a>
+          </li>
+        </ul>
       </div>
-      <ul class="footer-list">
-        <li>
-          <a class="anchor" href="#about-me">About Me</a>
-        </li>
-        <li>
-          <a class="anchor" href="#work">Work</a>
-        </li>
-        <li>
-          <a class="anchor" href="#contact-me">Contact Me</a>
-        </li>
-      </ul>
     </header>
-    <div class="banner">
-      <img class="header-img" src="/images/20220105_104056[126].jpg" alt="" />
-      <h2 class="banner-title">Full Stack Web Developer</h2>
+    <div class="wrapper">
+      <div class="banner">
+        <img class="header-img" src="/images/20220105_104056[126].jpg" alt="" />
+        <h2 class="banner-title">Full Stack Web Developer</h2>
+      </div>
+      <section id="about-me">
+        <h2 class="headers">About Me</h2>
+        <div class="info-section">
+          <p>
+            I recently got into coding because I needed something more from my
+            full time job. Something I could create and call my own. I needed to
+            really enjoy the time I spent working and not just working for a
+            paycheck. I decided to give coding a shot and thoroughly enjoyed it.
+          </p>
+          <p>
+            Outside of coding I enjoy being around a campfire with friends and
+            family, playing music on my piano, geochaching, and escape rooms!
+          </p>
+        </div>
+      </section>
+      <section id="work">
+        <h2 class="headers">Work</h2>
+        <div class="border">
+          <div class="first-image">
+            <a href="https://calebluster.github.io/run-buddy/" target="_blank">
+              <img
+                src="images/hero-bg.jpg"
+                alt="Run Buddy Project image"
+                title="Run Buddy Website"
+              />
+            </a>
+          </div>
+          <div class="other-images">
+            <a class="fixline" href="https://placeholder.com/" target="_blank">
+              <img
+                class="smaller-img"
+                src="https://via.placeholder.com/300"
+                alt="placeholder img"
+                title="Placeholder homepage"
+              />
+            </a>
+            <a class="fixline" href="https://placeholder.com/" target="_blank">
+              <img
+                class="smaller-img"
+                src="https://via.placeholder.com/300"
+                alt="placeholder img"
+                title="Placeholder homepage"
+              />
+            </a>
+            <a class="fixline" href="https://placeholder.com/" target="_blank">
+              <img
+                class="smaller-img"
+                src="https://via.placeholder.com/300"
+                alt="placeholder img"
+                title="Placeholder homepage"
+              />
+            </a>
+            <a class="fixline" href="https://placeholder.com/" target="_blank">
+              <img
+                class="smaller-img"
+                src="https://via.placeholder.com/300"
+                alt="placeholder img"
+                title="Placeholder homepage"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
-    <section id="about-me">
-      <h2 class="headers">About Me</h2>
-      <div class="info-section">
-        <p>
-          I recently got into coding because I needed something more from my
-          full time job. Something I could create and call my own. I needed to
-          really enjoy the time I spent working and not just working for a
-          paycheck. I decided to give coding a shot and thoroughly enjoyed it.
-        </p>
-        <p>
-          Outside of coding I enjoy being around a campfire with friends and
-          family, playing music on my piano, geochaching, and escape rooms!
-        </p>
-      </div>
-    </section>
-    <section id="work">
-      <h2 class="headers">Work</h2>
-      <div class="border">
-        <div class="first-image">
-          <a href="https://calebluster.github.io/run-buddy/" target="_blank">
-            <img
-              src="images/hero-bg.jpg"
-              alt="Run Buddy Project image"
-              title="Run Buddy Website"
-            />
-          </a>
-        </div>
-        <div class="other-images">
-          <a href="https://placeholder.com/" target="_blank">
-            <img
-              class="smaller-img"
-              src="https://via.placeholder.com/300"
-              alt="placeholder img"
-            />
-          </a>
-          <a href="https://placeholder.com/" target="_blank">
-            <img
-              class="smaller-img"
-              src="https://via.placeholder.com/300"
-              alt="placeholder img"
-            />
-          </a>
-          <a href="https://placeholder.com/" target="_blank">
-            <img
-              class="smaller-img"
-              src="https://via.placeholder.com/300"
-              alt="placeholder img"
-            />
-          </a>
-          <a href="https://placeholder.com/" target="_blank">
-            <img
-              class="smaller-img"
-              src="https://via.placeholder.com/300"
-              alt="placeholder img"
-            />
-          </a>
-        </div>
-      </div>
-    </section>
     <footer id="contact-me">
-      <h2 class="headers">Contact Me</h2>
-      <ul class="footer-list">
-        <li>
-          <p class="anchor">(507)398-5340</p>
-        </li>
-        <li>
-          <a class="anchor" href="mailto:cwl117@outlook.com">Email</a>
-        </li>
-        <li>
-          <a
-            class="anchor"
-            href="https://github.com/CalebLuster"
-            target="_blank"
-            >GitHub</a
-          >
-        </li>
-      </ul>
+      <div class="footer-content">
+        <h2 class="contact-me-header">Contact Me</h2>
+        <ul class="footer-list">
+          <li>
+            <a class="anchor">(507)398-5340</a>
+          </li>
+          <li>
+            <a class="anchor" href="mailto:cwl117@outlook.com">Email</a>
+          </li>
+          <li>
+            <a
+              class="anchor"
+              href="https://github.com/CalebLuster"
+              target="_blank"
+              >GitHub</a
+            >
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
